@@ -15,13 +15,13 @@ def BubbleSort(A):                  # сортировка пузырьком
 
 def MySelectSort (B):
     for i in range(0, N-1):
-        m = i;
+        m = i
         for j in range(i, N):
             if B[j] < B[m]:
-                m = j;
-        a = B[i];
-        B[i] = B[m];
-        B[m] = a;
+                m = j
+        a = B[i]
+        B[i] = B[m]
+        B[m] = a
 
 
 table = prettytable.PrettyTable(["Размер списка", "Время пузырька", "Время select-сортировки"])
