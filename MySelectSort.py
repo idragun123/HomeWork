@@ -13,7 +13,7 @@ def BubbleSort(A):                  # сортировка пузырьком
                 A[j+1] = a
 
 
-def MeSelectSort (B):
+def MySelectSort (B):
     for i in range(0, N-1):
         m = i;
         for j in range(i, N):
@@ -49,7 +49,7 @@ for N in range(1000,5001,1000):
     print(A)
 
 
-    MeSelectSort(B)
+    MySelectSort(B)
     print("---")
     print(B)
 
@@ -60,7 +60,7 @@ for N in range(1000,5001,1000):
     print("Пузырьковая сортировка   " +str(N)+"   заняла   "+str((t2-t1).total_seconds()) + "c")
 
     t3 = datetime.datetime.now()
-    MeSelectSort(B)
+    MySelectSort(B)
     t4 = datetime.datetime.now()
     y2.append((t4 - t3).total_seconds())
     print("Select-сортировка   " +str(N)+"   заняла   "+str((t4-t3).total_seconds()) + "c")
